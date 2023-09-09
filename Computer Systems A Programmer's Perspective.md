@@ -97,8 +97,22 @@ The *Amdahl's law* main idea is that when we speed up one part of a system, the 
 Consider a system in which executing some application requires time $T_{old}$. Suppose some part of the system requires a fraction $\alpha$ of this time, and that we improve its performance by a factor of $k$. That is, the component originally required time $\alpha T_{old}$, and it now requires time $\frac{\alpha T_{old}}{k}$. The overall execution time would thus be
 
 $$$
-T_{new} = (1 - \alpha)T_{old} + \frac{\alpha T_{old}}{k}
+\begin{align*}
+T_{new} &= (1 - \alpha)T_{old} + \frac{\alpha T_{old}}{k} \\
+        &= T_{old}[(1- \alpha) + \frac{\alpha}{k}]
+\end{align*}
+$$$
+
+From this, we can compute the speedup $S = \frac{T_{old}}{T_{new}}$ as
+
+$$$
+S = \frac{1}{(1 - \alpha) + \alpha / k}
 $$$
 
 ```
 
+We use the term *concurrency* to refer to the general concept of a system with multiple, simulaneous activities, and the term *parallelism* to refer to the use of concurrency to make a system run faster.
+
+- *Thread-level Concurrency*
+- *Instruction-level Parallelism*
+- *Single-Instruction, Multiple-Data (SIMD) Parallelism*
