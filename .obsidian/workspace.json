@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6358a648bc313014",
+        "id": "70ea3cef76acd81a",
         "type": "tabs",
         "children": [
           {
-            "id": "0fa87c26245a8505",
+            "id": "2ecb7da3e667ce38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "深入理解计算机系统.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b67e1093dae9bd3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "如何阅读一本书.md",
+                "file": "Computer Systems A Programmer's Perspective.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "如何阅读一本书.md",
+                "file": "Computer Systems A Programmer's Perspective.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "如何阅读一本书.md",
+                "file": "Computer Systems A Programmer's Perspective.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "如何阅读一本书.md"
+                "file": "Computer Systems A Programmer's Perspective.md"
               }
             }
           }
@@ -162,8 +149,9 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "b67e1093dae9bd3e",
+  "active": "2ecb7da3e667ce38",
   "lastOpenFiles": [
+    "Computer Systems A Programmer's Perspective.md",
     "深入理解计算机系统.md",
     "如何阅读一本书.md",
     "assets"
