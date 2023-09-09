@@ -37,3 +37,18 @@ On a Unix system, the translation from source file to object file is performed b
 - *Linking phase*. For standard library functions there must be some way to merge them into `hello.o` program, the linker (ld) handles this merging. The result is the hello file, which is an executable object file (or *executable*) that is ready to be loaded into memory and executed by the system.
 
 There are some important reasons why programmers need to understand how compilation systems work:
+- Optimizing program performance
+- Understanding link-time errors
+- Avoiding security holes
+
+At this point, our `hello.c` source program has been translated by the compilation system into an executable object file called hello that is stored on disk. To run the executable file on the Unix system:
+
+```shell
+./hello
+hello, world
+```
+
+![[Pasted image 20230909160214.png]]
+
+Hardware organization of a system:
+- *Buses*.
