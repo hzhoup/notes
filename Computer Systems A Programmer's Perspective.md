@@ -65,7 +65,40 @@ Caches Matter: ![[Pasted image 20230909162310.png]]
 
 Storage Devices Form a Hierarchy: ![[Pasted image 20230909162414.png]]
 
-The operating system has two primary purposes: (1) to protect the hardware from misuse by runaway applications and (2) to provide applications with simple and uniform mecha
+The operating system has two primary purposes: (1) to protect the hardware from misuse by runaway applications and (2) to provide applications with simple and uniform mechanisms for manipulating complicated and often wildly different low-level hardware devices.
 
 Layered view of a computer system: ![[Pasted image 20230909162937.png]]
+
+Abstractions provided by an operating system: ![[Pasted image 20230909163456.png]]
+
+A *process* is the operating system's abstraction for a running program. Multiple processes can run concurrently on the same system, and each process appears to have exclusive use of the hardware. By *concurrently*, we mean that the instructions of one process are are interleaved with the instructions of another process. A single CPU can appear to execute multiple processes concurrently by having the processor switch among them. The operating system performs this interleaving with a mechanism known as *context switching*.
+
+Process context switching: ![[Pasted image 20230909164327.png]]
+
+In modern systems a process can actually consist of multiple execution units, called *threads*, each running in the context of the process and sharing the same code and global data.
+
+*Virtual memory* is an abstraction that provides each process with the illusion that it has exclusive use of the main memory. Each process has the same uniform view of memory, which is known as its *virtual address space*.
+
+Process virtual address space: ![[Pasted image 20230909164732.png]]
+
+Starting with the lowest addresses and working our way up:
+- *Program code and data*
+- *Heap*
+- *Shared libraries*
+- *Stack*
+- *Kernel virtual memory*
+
+A network is another I/O device: ![[Pasted image 20230909165239.png]]
+
+```ad-note
+
+The *Amdahl's law* main idea is that when we speed up one part of a system, the effect on the overall system performance depends on both how significant this part was and how much it sped up.
+
+Consider a system in which executing some application requires time $T_{old}$. Suppose some part of the system requires a fraction $\alpha$ of this time, and that we improve its performance by a factor of $k$. That is, the component originally required time $\alpha T_{old}$, and it now requires time $\frac{\alpha T_{old}}{k}$. The overall execution time would thus be
+
+$$$
+T_{new} = (1 - \alpha)T_{old} + \frac{\alpha T_{old}}{k}
+$$$
+
+```
 
