@@ -51,4 +51,21 @@ hello, world
 ![[Pasted image 20230909160214.png]]
 
 Hardware organization of a system:
-- *Buses*.
+- *Buses*. Running throughout the system is a collection of electrical conduits called buses that carry bytes of information back and forth between the components.
+- *I/O Devices*. Input/output devices are the system's connection to the external world. Each I/O device is connected to the I/O bus by either a *controller* or an *adapter*.
+- *Main Memory*. The main memory is a temporary storage device that holds both a program and the data it manipulates while the processor is executing the program. Physically, main memory consists of a collection of *dynamic random access memory* chips. Logically, memory is organized as a linear array of bytes, each with its own unique address starting at zero.
+- *Processor*. The *central processing unit* (CPU), or simply processor, is the engine that interprets (or executes) instructions stored in main memory. At its core is a word-size storage device (or register) called the *program counter* (PC). At any point in time, the PC points at some machine-language instruction in main memory.
+
+Running the hello program:
+1. ![[Pasted image 20230909161453.png]]
+2. ![[Pasted image 20230909161518.png]]
+3. ![[Pasted image 20230909161532.png]]
+
+Caches Matter: ![[Pasted image 20230909162310.png]]
+
+Storage Devices Form a Hierarchy: ![[Pasted image 20230909162414.png]]
+
+The operating system has two primary purposes: (1) to protect the hardware from misuse by runaway applications and (2) to provide applications with simple and uniform mecha
+
+Layered view of a computer system: ![[Pasted image 20230909162937.png]]
+
