@@ -116,3 +116,13 @@ We use the term *concurrency* to refer to the general concept of a system with m
 - *Thread-level Concurrency*
 - *Instruction-level Parallelism*
 - *Single-Instruction, Multiple-Data (SIMD) Parallelism*
+
+## Representing and Manipulating Information
+
+Modern computers store and precess information represented as two-valued signals. In isolation, a single bit is not very useful. When we group bits together and apply some *interpretation* that gives meaning to the different possible bit patterns, bowever, we can represent the elements of any finite set.
+
+Rather than accessing individual bits in memory, most computers use blocks of 8 bits, or bytes, as the smallest addressable unit of memory. A machine-level program views memory as a very large array of bytes, referred to as *virtual memory*. Every byte of memory is identified by a unique number, known as its *address*, and the set of all possible addresses is known as the *virtual address space*.
+
+### Hexadecimal Notation
+
+A single byte consists of 8 bits. In binary notation, its value ranges from $00000000_2$ to $11111111_2$.
