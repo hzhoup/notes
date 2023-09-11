@@ -123,6 +123,6 @@ Modern computers store and precess information represented as two-valued signals
 
 Rather than accessing individual bits in memory, most computers use blocks of 8 bits, or bytes, as the smallest addressable unit of memory. A machine-level program views memory as a very large array of bytes, referred to as *virtual memory*. Every byte of memory is identified by a unique number, known as its *address*, and the set of all possible addresses is known as the *virtual address space*.
 
-### Hexadecimal Notation
+Hexadecimal uses digits '0' through '9' along with characters 'A' through 'F' to represent 16 possible values.
 
-A single byte consists of 8 bits. In binary notation, its value ranges from $00000000_2$ to $11111111_2$.
+Every computer has a *word size*, indicating the nominal size of pointer data. Since a virtual address is encoded by such a word, the most important system parameter determined by the word size is the maximum size of the virtual address space.
